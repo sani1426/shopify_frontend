@@ -2,6 +2,6 @@
 
 export default function Home() {
   return (
-<div className="text-5xl text-rose-700">home page</div>
+<div className="text-5xl text-rose-700">HOME PAGE</div>
   );
 }
