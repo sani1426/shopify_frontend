@@ -23,7 +23,7 @@ const Topbar = () => {
           <span className='text-3xl  text-nowrap'>Shopify</span>
         </Link>
 
-        <div className={`w-full  flex-center bg_soft rounded-md  `}>
+        <div className={`w-full   bg_soft rounded-md hidden lg:flex items-center justify-center flex-grow `}>
           <input
             className='w-full rounded-md px-4 py-2'
             type='text'
