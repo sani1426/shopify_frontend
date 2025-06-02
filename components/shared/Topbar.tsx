@@ -1,9 +1,12 @@
 
-import Logo from './logo.jsx'
+
 import { FaUserCircle } from 'react-icons/fa'
 import Link from 'next/link'
-import { APP_NAME } from '@/lib/constants.js'
-import ThemeToggle from '../UI/ThemeToggle.jsx'
+import Logo from './logo'
+import ThemeToggle from '../UI/ThemeToggle'
+
+
+
 
 const Topbar = () => {
 
@@ -12,12 +15,12 @@ const Topbar = () => {
   return (
     <header
 
-      className='h-20 nav-class  shadow-md fixed w-full z-[1000]'
+      className='h-20 bg_soft  shadow-md fixed w-full z-[1000]'
     >
       <div className='container my-auto mx-auto flex-between h-full gap-8 lg:gap-12   px-4'>
         <Link className='flex-center ' href='/'>
-          <Logo w={70} h={40} />
-          <span className='text-2xl text-grown-50 text-nowrap'>{APP_NAME}</span>
+          <Logo />
+          <span className='text-2xl text-grown-50 text-nowrap'>Shopify</span>
         </Link>
 
         <div className={`w-full  flex-center bg_soft rounded-md  `}>

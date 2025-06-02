@@ -1,12 +1,11 @@
 import React from 'react'
 
-const Logo = ({w,h}) => {
+const Logo = () => {
   return (
     <img
     src='/icons/newLogo.svg'
     alt='logo-image'
-    width={w}
-    height={h}
+className='w-[70px] h-[40px]'
   />
   )
 }
