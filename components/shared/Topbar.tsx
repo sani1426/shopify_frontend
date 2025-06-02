@@ -15,12 +15,12 @@ const Topbar = () => {
   return (
     <header
 
-      className='h-20 bg_soft  shadow-md fixed w-full z-[1000]'
+      className='h-20 bg_main  shadow-md fixed w-full z-[1000]'
     >
       <div className='container my-auto mx-auto flex-between h-full gap-8 lg:gap-12   px-4'>
         <Link className='flex-center ' href='/'>
           <Logo />
-          <span className='text-2xl text-grown-50 text-nowrap'>Shopify</span>
+          <span className='text-3xl  text-nowrap'>Shopify</span>
         </Link>
 
         <div className={`w-full  flex-center bg_soft rounded-md  `}>
@@ -36,7 +36,7 @@ const Topbar = () => {
 
               <Link
                 href='/login'
-                className=' bg-transparent border-2 px-3 py-2 rounded-md text-2xl md:hidden'
+                className=' bg-transparent border-2 px-3 py-2 rounded-md text-2xl '
               >
                 <FaUserCircle />
               </Link>
