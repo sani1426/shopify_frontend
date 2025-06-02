@@ -9,7 +9,7 @@ const ThemeToggle = () => {
   
   return (
     <div
-      onClick={toggleTheme}
+
       className={`min-w-[50px] h-[30px] relative flex-between rounded-[50px] cursor-pointer px-1 transition-all ${
         theme === 'light' ? 'bg-sky-200' : 'bg-blue-600'
       }`}
