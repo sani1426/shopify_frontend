@@ -2,6 +2,8 @@
 
 export default function Home() {
   return (
-<div className="text-5xl text-rose-700">HOME PAGE</div>
+<div className="text-5xl text-rose-700">HOME PAGE
+    <button className="gradient_bg text-white px-4 py-3">click</button>
+</div>
   );
 }

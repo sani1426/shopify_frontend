@@ -2,7 +2,7 @@
 
 const Topbar = () => {
   return (
-   <section>
+   <section className="w-full h-20 bg-[#041335]">
     
    </section>
   )

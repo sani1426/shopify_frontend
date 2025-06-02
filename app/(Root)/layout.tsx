@@ -1,3 +1,4 @@
+import Topbar from "@/components/shared/Topbar";
 
 
 export default function RootLayout({
@@ -8,6 +9,7 @@ export default function RootLayout({
   return (
 
       <main>
+        <Topbar />
         {children}
       </main>
 

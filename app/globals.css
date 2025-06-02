@@ -27,22 +27,29 @@ body {
   }
 }
 
+
+
+
 :root {
   --bg: #ffffff;
-  --bg-soft: #cacacac5;
-  --text-clr: #020617;
-  --text-clr-soft: #1e293b;
+  --bg-soft: #F4F4F4;
+  --text-clr: #222222;
+  --text-clr-soft: #222222;
   --border-clr:#1e293bc7;
   --primary: #070C12 ;
   --font-poppins : poppins ;
 }
+
 .dark {
-  --bg: #0f172a;
-  --bg-soft: #1e293b;
+  --bg: #041335;
+  --bg-soft: #0b1d3a;
   --text-clr: #f1f5f9;
   --text-clr-soft: #cbd5e1;
   --border-clr:#cbd5e1d7;
   --primary: #96F207 ;
+}
+.gradient_bg{
+  background: linear-gradient(-45deg, #fc00ff 0%, #00dbde 100% );
 }
 
 .poppins{
