@@ -1,13 +1,8 @@
 import type { Metadata } from "next";
-import { Montserrat_Alternates } from "next/font/google";
+
 import "./globals.css";
 import { APP_DESCRIPTION, APP_NAME, APP_SLOGAN } from "@/lib/constants";
-
-const montserrat = Montserrat_Alternates({
-  weight : ['200' , '300' , '400' , '500' , '600' , '700' , '800'] ,
-  variable: "--font-montserrat",
-  subsets: ["latin"],
-});
+import localFont from 'next/font/local'
 
 
 
@@ -19,14 +14,16 @@ export const metadata: Metadata = {
   description: APP_DESCRIPTION,
 }
 
-export default function RootLayout({
+const myFont = localFont({ src: '../public/font/montserrat/MontserratAlternates-Medium.ttf' })
+
+export default function MainLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <html lang="en">
-      <body className={`${montserrat.variable}`}>
+      <body  className={myFont.className}>
         {children}
       </body>
     </html>

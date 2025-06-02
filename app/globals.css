@@ -2,9 +2,67 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+  font-family: poppins;
+  src: url(../public/font/poppins/Poppins-Medium.ttf)format(truetype);
+}
 
 * {
-  box-sizing: border-box;
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  animation: fade 1.5s;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+:root {
+  --bg: #ffffff;
+  --bg-soft: #cacacac5;
+  --text-clr: #020617;
+  --text-clr-soft: #1e293b;
+  --border-clr:#1e293bc7;
+  --primary: #070C12 ;
+  --font-poppins : poppins ;
+}
+.dark {
+  --bg: #0f172a;
+  --bg-soft: #1e293b;
+  --text-clr: #f1f5f9;
+  --text-clr-soft: #cbd5e1;
+  --border-clr:#cbd5e1d7;
+  --primary: #96F207 ;
+}
+
+.poppins{
+  font-family: var(--font-poppins);
+}
+.bg_main {
+  background-color: var(--bg);
+  color: var(--text-clr);
+}
+.bg_soft {
+  background-color: var(--bg-soft);
+  color: var(--text-clr);
+}
+
+.flex-center {
+  @apply flex justify-center items-center;
+}
+.flex-between {
+  @apply flex justify-between items-center;
+}
+.flex-start {
+  @apply flex justify-start items-center;
 }
