@@ -14,3 +14,25 @@ export type CardItem ={
   }[]
 }
 
+
+export interface IProduct {
+  name: string;
+  description: string;
+  price: number;
+  listPrice?: number;
+  countInStock?: number;
+  numSales: number;
+  category: string;
+  brand: string;
+  sizes?: string[];
+  colors?: string[];
+  images?: string[];
+  isPublished: boolean;
+  avgRating: number;
+  numReviews: number;
+  tags?: string[];
+  reviews?: any[];
+}
+
+
+
