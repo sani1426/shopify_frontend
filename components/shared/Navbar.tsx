@@ -15,7 +15,7 @@ const Navbar = () => (
           <span className='text-3xl  text-nowrap'>Shopify</span>
         </Link>
       </Col>
-      <Col span={12}>
+      <Col xs={10} span={12} offset={2}>
         <div
           className={`w-full   bg_soft rounded-md hidden lg:flex items-center `}
         >

@@ -31,8 +31,8 @@ body {
 
 
 :root {
-  --bg: #FFFAFA;
-  --bg-soft: #F5F5F5;
+  --bg: #ffffff;
+  --bg-soft: #f8f9fa;
   --text-clr: #222222;
   --text-clr-soft: #222222;
   --border-clr:#1e293bc7;
@@ -41,8 +41,8 @@ body {
 }
 
 .dark {
-  --bg: #32174D;
-  --bg-soft: #301934;
+  --bg: #001233;
+  --bg-soft: #001845;
   --text-clr: #f1f5f9;
   --text-clr-soft: #cbd5e1;
   --border-clr:#cbd5e1d7;
