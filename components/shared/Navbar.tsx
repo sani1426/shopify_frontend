@@ -9,7 +9,7 @@ const Navbar = () => (
   <header className='bg_soft border-b-2 fixed w-full z-[1001] pr-6  mx-auto'>
  <div className=' py-3 mx-auto '>
  <Row  justify="space-around" align="middle">
-      <Col span={5} offset={1}>
+      <Col span={5} >
         <Link className='flex items-center justify-start ' href='/'>
           <Logo />
           <span className='text-3xl  text-nowrap'>Shopify</span>
