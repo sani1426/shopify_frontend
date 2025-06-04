@@ -3,7 +3,7 @@ import Link from "next/link"
 
 const NavigationMenu = () => {
   return (
-    <header className=' bg_soft  shadow-md hidden lg:block w-full z-[1000]'>
+    <header className=' bg_soft  shadow-md hidden lg:block w-full z-[1000] lg:fixed'>
     <div className='container my-auto mx-auto flex items-center gap-8 lg:gap-12   px-4'>
     {
         nav_Item.map(item => (
