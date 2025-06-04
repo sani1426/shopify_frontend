@@ -1,21 +1,22 @@
-import { FaUserCircle } from 'react-icons/fa'
+import { Col, Row } from 'antd'
 import Link from 'next/link'
 import Logo from './logo'
 import ThemeToggle from '../UI/ThemeToggle'
 import { IoSearch } from 'react-icons/io5'
+import { FaUserCircle } from 'react-icons/fa'
 
-
-const Topbar = () => {
-  return (
-    <header className='h-20 bg_soft border-b-2 fixed w-full z-[1001]'>
-      <div className='container my-auto mx-auto flex-between h-full gap-8 lg:gap-12   px-4'>
+const Navbar = () => (
+  <header className='h-20 bg_soft border-b-2 fixed w-full z-[1001]'>
+    <Row>
+      <Col xs={20} sm={16} md={12} lg={8} xl={4}>
         <Link className='flex-center ' href='/'>
           <Logo />
           <span className='text-3xl  text-nowrap'>Shopify</span>
         </Link>
-
+      </Col>
+      <Col xs={2} sm={4} md={6} lg={8} xl={10}>
         <div
-          className={`w-full   bg_soft rounded-md hidden lg:flex items-center justify-center flex-grow `}
+          className={`w-full   bg_soft rounded-md hidden lg:flex items-center `}
         >
           <input
             className='w-full rounded-e-none rounded-s-md  px-4 py-2 border-[1px]'
@@ -29,8 +30,9 @@ const Topbar = () => {
             <IoSearch />
           </button>
         </div>
-
-        <div className='w-full flex items-center justify-end  gap-4'>
+      </Col>
+      <Col xs={20} sm={16} md={12} lg={8} xl={4}>
+        <div className='w-full flex items-center  gap-4'>
           <Link
             href='/login'
             className=' bg-transparent border-2 px-3 py-2 rounded-md text-2xl '
@@ -40,9 +42,9 @@ const Topbar = () => {
 
           <ThemeToggle />
         </div>
-      </div>
-    </header>
-  )
-}
+      </Col>
+    </Row>
+  </header>
+)
 
-export default Topbar
+export default Navbar

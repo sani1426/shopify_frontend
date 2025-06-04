@@ -1,5 +1,6 @@
+import Navbar from "@/components/shared/Navbar";
 import NavigationMenu from "@/components/shared/NavigationMenu";
-import Topbar from "@/components/shared/Topbar";
+
 
 
 export default function RootLayout({
@@ -10,7 +11,7 @@ export default function RootLayout({
   return (
 
       <main>
-        <Topbar />
+        <Navbar />
         <NavigationMenu />
         {children}
       </main>
