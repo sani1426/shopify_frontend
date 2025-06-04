@@ -19,6 +19,7 @@ const Topbar = () => {
       className='h-20 bg_soft  shadow-md fixed w-full z-[1000]'
     >
       <div className='container my-auto mx-auto flex-between h-full gap-8 lg:gap-12   px-4'>
+
         <Link className='flex-center ' href='/'>
           <Logo />
           <span className='text-3xl  text-nowrap'>Shopify</span>
@@ -39,8 +40,6 @@ const Topbar = () => {
         </div>
  
         <div className='w-full flex items-center justify-end  gap-4'>
-     
-
               <Link
                 href='/login'
                 className=' bg-transparent border-2 px-3 py-2 rounded-md text-2xl '
@@ -50,6 +49,7 @@ const Topbar = () => {
 
           <ThemeToggle />
         </div>
+        
       </div>
     </header>
   )
