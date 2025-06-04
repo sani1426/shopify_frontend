@@ -2,6 +2,11 @@ export type  IBackendApiType = {
   url : string 
   method : string
 } 
+export interface navItemType {
+  id: number ;
+  label : string ;
+  href : string;
+}
 
 export type CardItem ={
   title:string

@@ -537,3 +537,19 @@ const products= [
 
 
 export default products
+
+export const nav_Item = [
+  {
+    id : 1 , label: 'home' , href: '/'
+  },
+  {
+    id : 1 , label: 'PRODUCT' , href: '/'
+  },
+  {
+    id : 1 , label: 'ABOUT' , href: '/'
+  },
+  {
+    id : 1 , label: 'CONTACT' , href: '/'
+  },
+
+]
