@@ -8,9 +8,9 @@ import { FaUserCircle } from 'react-icons/fa'
 const Navbar = () => (
   <header className='bg_soft border-b-2 fixed w-full z-[1001] px-4  '>
  <div className=' py-3 mx-auto '>
- <Row  justify="space-between" align="middle">
+ <Row  justify="space-around" align="middle">
       <Col span={5} offset={1}>
-        <Link className='flex-center ' href='/'>
+        <Link className='flex items-center justify-start ' href='/'>
           <Logo />
           <span className='text-3xl  text-nowrap'>Shopify</span>
         </Link>
@@ -33,7 +33,7 @@ const Navbar = () => (
         </div>
       </Col>
       <Col span={5} offset={1}>
-        <div className='w-full flex items-center  gap-4'>
+        <div className='w-full flex items-center  justify-end gap-4'>
           <Link
             href='/login'
             className=' bg-transparent border-2 px-3 py-2 rounded-md text-2xl '
