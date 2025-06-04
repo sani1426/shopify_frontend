@@ -7,7 +7,7 @@ import { FaUserCircle } from 'react-icons/fa'
 
 const Navbar = () => (
   <header className='bg_soft border-b-2 fixed w-full z-[1001] '>
- <div className='container my-auto mx-auto py-3 '>
+ <div className=' my-auto mx-auto py-3 px-4  '>
  <Row  justify="space-between" align="middle">
       <Col span={5} offset={1}>
         <Link className='flex-center ' href='/'>
@@ -15,7 +15,7 @@ const Navbar = () => (
           <span className='text-3xl  text-nowrap'>Shopify</span>
         </Link>
       </Col>
-      <Col xs={10} span={12} offset={2}>
+      <Col xs={10} span={12}>
         <div
           className={`w-full   bg_soft rounded-md hidden lg:flex items-center `}
         >
