@@ -49,7 +49,7 @@ body {
   --primary: #96F207 ;
 }
 .gradient_bg{
-  background: linear-gradient(90deg, #E62314 0%, #F19E18 100% );
+  background: linear-gradient(90deg, #df4f23 0%, #F19E18 100% );
 }
 
 .poppins{
