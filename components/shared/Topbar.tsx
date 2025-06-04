@@ -17,8 +17,8 @@ const Topbar = () => {
 
       className='h-20 bg_soft  shadow-md fixed w-full z-[1000]'
     >
-      <div className='container my-auto mx-auto flex-center h-full px-4'>
-        <Link className='flex-center ml-auto' href='/'>
+      <div className='container my-auto mx-auto  flex-center h-full px-4'>
+        <Link className='flex items-center justify-start' href='/'>
           <Logo />
           <span className='text-3xl  text-nowrap'>Shopify</span>
         </Link>
@@ -31,7 +31,7 @@ const Topbar = () => {
           />
         </div>
  
-        <div className='w-full flex items-center  gap-4 mr-auto'>
+        <div className='w-full flex items-center  gap-4 justify-end'>
      
 
               <Link
