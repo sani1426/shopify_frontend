@@ -6,8 +6,8 @@ import { IoSearch } from 'react-icons/io5'
 import { FaUserCircle } from 'react-icons/fa'
 
 const Navbar = () => (
-  <header className='bg_soft border-b-2 fixed w-full z-[1001] '>
- <div className=' my-auto mx-auto py-3 px-4  '>
+  <header className='bg_soft border-b-2 fixed w-full z-[1001] px-4  '>
+ <div className=' py-3 mx-auto '>
  <Row  justify="space-between" align="middle">
       <Col span={5} offset={1}>
         <Link className='flex-center ' href='/'>
@@ -15,7 +15,7 @@ const Navbar = () => (
           <span className='text-3xl  text-nowrap'>Shopify</span>
         </Link>
       </Col>
-      <Col xs={10} span={12}>
+      <Col xs={10} lg={12}>
         <div
           className={`w-full   bg_soft rounded-md hidden lg:flex items-center `}
         >
