@@ -4,7 +4,7 @@ import { FaUserCircle } from 'react-icons/fa'
 import Link from 'next/link'
 import Logo from './logo'
 import ThemeToggle from '../UI/ThemeToggle'
-import { IoSearchCircleOutline } from 'react-icons/io5'
+import { IoSearch } from "react-icons/io5";
 
 
 
@@ -32,9 +32,9 @@ const Topbar = () => {
           />
             <button
         type='submit'
-        className='bg-yellow-500 text-black rounded-s-none rounded-e-md h-full px-3 py-2  hover:bg-yellow-300 duration-500 transition-all'
+        className='bg-yellow-500 text-black rounded-s-none rounded-e-md h-full px-3 py-2  hover:bg-yellow-300 duration-500 transition-all text-2xl'
       >
-        <IoSearchCircleOutline className='w-6 h-6' />
+        <IoSearch />
       </button>
         </div>
  
