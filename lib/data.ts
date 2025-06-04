@@ -540,7 +540,7 @@ export default products
 
 export const nav_Item = [
   {
-    id : 1 , label: 'home' , href: '/'
+    id : 1 , label: 'HOME' , href: '/'
   },
   {
     id : 1 , label: 'PRODUCT' , href: '/'

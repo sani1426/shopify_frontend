@@ -6,7 +6,7 @@ import { IoSearch } from 'react-icons/io5'
 
 const Topbar = () => {
   return (
-    <header className='h-20 bg_soft  shadow-md fixed w-full z-[1000]'>
+    <header className='h-20 bg_soft border-b-2 fixed w-full z-[1001]'>
       <div className='container my-auto mx-auto flex-between h-full gap-8 lg:gap-12   px-4'>
         <Link className='flex-center ' href='/'>
           <Logo />
