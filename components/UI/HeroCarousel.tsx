@@ -26,7 +26,23 @@ const HeroCarousel = () => {
         })}
       </div>
 
-      
+        <div className="thumbnail absolute bottom-[50%] left-[50%] w-[max-content] z-[100] flex gap-5">
+            {
+                sliderData.map((_) => {
+                    return(
+                        <div className="w-[150px] h-[220px] flex-shrink-0 relative">
+                        <img src={_?.imgSrc} alt="" className='w-full h-full object-cover rounded-[20px]' />
+                        <div className="absolute bottom-[10px] left-[10px] right-[10px]">
+                            <div className="font-bold">{_?.title}</div>
+                            <div className="des">{_?.description}</div>
+                        </div>
+                    </div>
+                    )
+                })
+            }
+       
+        </div>
+
     </div>
   )
 }
