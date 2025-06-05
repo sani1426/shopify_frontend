@@ -11,20 +11,22 @@ const HeroCarousel = () => {
           return (
             <div key={item?.id} className='item absolute inset-0'>
               <img src={item?.imgSrc} alt='' className='w-full h-full object-cover' />
-              <div className='content absolute top-[20%] w-[1140px] max-w-[80%] left-[50%] transform -translate-x-[50%]'>
-                <div className='author'>{item?.title}</div>
-                <div className='title'>{item?.offer}</div>
-                <div className='topic'>saman</div>
+              <div className='content absolute top-[20%] w-[1140px] max-w-[80%] left-[50%] transform -translate-x-[50%] pr-[30%] box-border text-[#fff] '>
+                <div className='author font-bold tracking-[10px] '>{item?.title}</div>
+                <div className='title font-bold text-[5em] '>{item?.offer}</div>
+                <div className='topic font-bold text-[5em] text-[#f1683a]'>saman</div>
                 <div className='des'>{item?.description}</div>
-                <div className='buttons'>
-                  <button className=''>{item?.buttonText1}</button>
-                  <button className=''>{item?.buttonText2}</button>
+                <div className='buttons grid grid-cols-[repeat(2,130px)] grid-rows-[40px] gap-1 mt-5'>
+                  <button className='border-none bg-[#eee] tracking-[3px] font-semibold '>{item?.buttonText1}</button>
+                  <button className='tracking-[3px] font-semibold border-[1px] border-white bg-transparent text-white'>{item?.buttonText2}</button>
                 </div>
               </div>
             </div>
           )
         })}
       </div>
+
+      
     </div>
   )
 }

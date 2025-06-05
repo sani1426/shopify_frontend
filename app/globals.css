@@ -73,3 +73,7 @@ body {
 .flex-start {
   @apply flex justify-start items-center;
 }
+
+.text_shadow{
+  text-shadow: 0 5px 10px #0004;
+}
