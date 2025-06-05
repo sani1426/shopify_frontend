@@ -43,7 +43,7 @@ const HeroCarousel = () => {
        
         </div>
 
-        <div className="arrows absolute top-[80%] right-[52%] w-[300px] max-w-[30%] flex gap-3 items-center z-[100]">
+        <div className="arrows">
             <button className='w-[40px] h-[40px] rounded-full bg-[#eee4] border-none text-[#fff] font-bold  transition-all duration-500 hover:bg-[#eee] hover:text-[#555]' id='prev'>prev</button>
             <button className='w-[40px] h-[40px] rounded-full bg-[#eee4] border-none text-[#fff] font-bold  transition-all duration-500 hover:bg-[#eee] hover:text-[#555]' id='next'>next</button>
         </div>
