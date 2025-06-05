@@ -19,6 +19,16 @@ export type CardItem ={
   }[]
 }
 
+export type sliderDataType ={
+  id: number
+  description: string
+  title: string
+  offer: string
+  buttonText1: string
+  buttonText2: string
+  imgSrc:string
+}
+
 
 export interface IProduct {
   name: string;

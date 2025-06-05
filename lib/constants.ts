@@ -1,3 +1,5 @@
+import { sliderDataType } from "@/types";
+
 export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Shopify'
    export const APP_SLOGAN =
      process.env.NEXT_PUBLIC_APP_SLOGAN || 'Spend less, enjoy more.'
@@ -6,18 +8,20 @@ export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Shopify'
      'An Online Shop built with Next.js and MongoDB'
 
 
-     const sliderData = [
+    export const sliderData:sliderDataType[] = [
       {
         id: 1,
-        title: "Experience Pure Sound - Your Perfect Headphones Awaits!",
+        title: "Experience Pure Sound",
         offer: "Limited Time Offer 30% Off",
+        description: ' Your Perfect Headphones Awaits!' ,
         buttonText1: "Buy now",
         buttonText2: "Find more",
         imgSrc: '/carousel/bose_headphone_image.png'
       },
       {
         id: 2,
-        title: "Next-Level Gaming Starts Here - Discover PlayStation 5 Today!",
+        title: "Next-Level Gaming Starts Here",
+        description: ' Discover PlayStation 5 Today!' ,
         offer: "Hurry up only few lefts!",
         buttonText1: "Shop Now",
         buttonText2: "Explore Deals",
@@ -25,10 +29,29 @@ export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Shopify'
       },
       {
         id: 3,
-        title: "Power Meets Elegance - Apple MacBook Pro is Here for you!",
+        title: "Power Meets Elegance ",
+        description: 'Apple MacBook Pro is Here for you!' ,
         offer: "Exclusive Deal 40% Off",
         buttonText1: "Order Now",
         buttonText2: "Learn More",
         imgSrc: '/carousel/banner1.jpg'
+      },
+      {
+        id: 4,
+        title: "Power Meets Elegance",
+        description: ' Apple MacBook Pro is Here for you' ,
+        offer: "Exclusive Deal 40% Off",
+        buttonText1: "Order Now",
+        buttonText2: "Learn More",
+        imgSrc: '/carousel/banner3.jpg'
+      },
+      {
+        id: 5,
+        title: "Power Meets Elegance",
+        description: ' Apple MacBook Pro is Here for you' ,
+        offer: "Exclusive Deal 40% Off",
+        buttonText1: "Order Now",
+        buttonText2: "Learn More",
+        imgSrc: '/carousel/playstation_image.png'
       },
     ];
