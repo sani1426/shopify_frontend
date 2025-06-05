@@ -26,14 +26,14 @@ const HeroCarousel = () => {
         })}
       </div>
 
-        <div className="thumbnail absolute bottom-[50%] left-[50%] w-[max-content] z-[100] flex gap-5">
+        <div className="thumbnail absolute top-[50%] left-[50%] w-[max-content] z-[100] flex gap-5">
             {
                 sliderData.map((_) => {
                     return(
-                        <div className="w-[150px] h-[220px] flex-shrink-0 relative">
+                        <div className="item w-[150px] h-[220px] flex-shrink-0 relative">
                         <img src={_?.imgSrc} alt="" className='w-full h-full object-cover rounded-[20px]' />
-                        <div className="absolute bottom-[10px] left-[10px] right-[10px]">
-                            <div className="font-bold">{_?.title}</div>
+                        <div className="content absolute bottom-[10px] left-[10px] right-[10px]">
+                            <div className=" author font-bold">{_?.title}</div>
                             <div className="des">{_?.description}</div>
                         </div>
                     </div>
@@ -43,7 +43,7 @@ const HeroCarousel = () => {
        
         </div>
 
-        <div className="absolute top-[80%] right-[52%] w-[300px] max-w-[30%] flex gap-3 items-center z-[100]">
+        <div className="arrows absolute top-[80%] right-[52%] w-[300px] max-w-[30%] flex gap-3 items-center z-[100]">
             <button className='w-[40px] h-[40px] rounded-full bg-[#eee4] border-none text-[#fff] font-bold  transition-all duration-500 hover:bg-[#eee] hover:text-[#555]' id='prev'>prev</button>
             <button className='w-[40px] h-[40px] rounded-full bg-[#eee4] border-none text-[#fff] font-bold  transition-all duration-500 hover:bg-[#eee] hover:text-[#555]' id='next'>next</button>
         </div>
