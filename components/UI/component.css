@@ -112,7 +112,7 @@
 }
 
   
-  .carousel.next .list .item:nth-child(1)  img{
+  .carousel.next .list .item:nth-child(1) img{
     width: 150px;
     height: 220px;
     position: absolute;
@@ -170,7 +170,7 @@
 
 
 .carousel.next .thumbnail .item:nth-last-child(1){
-    width: 0;
+    width: 0px;
     overflow: hidden;
     animation: showThumb .5s linear 1 forwards;
 }
@@ -208,7 +208,7 @@ animation: outImage 0.5s linear 1 forwards;
         height: 220px;
         border-radius: 20px;
         left: 50%;
-        bottom: 50px;
+        bottom: 60px;
     }
 }
 
