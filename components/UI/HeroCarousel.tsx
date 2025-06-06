@@ -3,51 +3,60 @@
 import { sliderData } from '@/lib/constants'
 import './component.css'
 import {useEffect} from 'react'
-
+let autoRun: ReturnType<typeof setTimeout> ;
+let runTimeOut: ReturnType<typeof setTimeout>;
 const HeroCarousel = () => {
 
 
     useEffect(() => {
-        let nextEl = document.getElementById('next')
-        let prevEl = document.getElementById('prev')
-        let carouselEl = document.querySelector('.carousel')
-        let listEl = document.querySelector('.carousel .list')
-        let thumbnailEl = document.querySelector('.carousel .thumbnail')
+      let nextDom = document.getElementById('next');
+let prevDom = document.getElementById('prev');
 
-        nextEl!.onclick = function() {
-          showSlider('next')
-        }
+let carouselDom = document.querySelector('.carousel');
+let SliderDom = carouselDom!.querySelector('.carousel .list');
+let thumbnailBorderDom = document.querySelector('.carousel .thumbnail');
+let thumbnailItemsDom = thumbnailBorderDom!.querySelectorAll('.item');
+let timeDom = document.querySelector('.carousel .time');
 
-        let timeRunning = 3000 ;
-        let autoNext = 7000 ;
-        let autoRun: ReturnType<typeof setTimeout> ;
-        let runTimeOut: ReturnType<typeof setTimeout>;
-        function showSlider(type:string){
-            let itemsSlider = document.querySelectorAll('.carousel .list .item') ;
-            let thumbnailSlider = document.querySelectorAll('.carousel .thumbnail .item') ;
+thumbnailBorderDom?.appendChild(thumbnailItemsDom[0]);
+let timeRunning = 3000;
+let timeAutoNext = 7000;
 
-            if(type === 'next'){
-                listEl?.appendChild(itemsSlider[0])
-                thumbnailEl?.appendChild(thumbnailSlider[0])
-                carouselEl?.classList.add('next')
-            }else{
-                let positionLastItem = itemsSlider.length - 1 ;
-                listEl?.prepend(itemsSlider[positionLastItem])
-                thumbnailEl?.prepend(thumbnailSlider[positionLastItem])
-                carouselEl?.classList.add('prev')
-            }
+nextDom!.onclick = function(){
+    showSlider('next');    
+}
 
-            clearTimeout(runTimeOut) ;
-            runTimeOut = setTimeout(()=> {
-                carouselEl?.classList.remove('next')
-            }, timeRunning)
+prevDom!.onclick = function(){
+    showSlider('prev');    
+}
+let runTimeOut: ReturnType<typeof setTimeout> ;
+let runNextAuto = setTimeout(() => {
+    nextDom?.click();
+}, timeAutoNext)
+function showSlider(type:string){
+    let  SliderItemsDom = SliderDom!.querySelectorAll('.carousel .list .item');
+    let thumbnailItemsDom = document.querySelectorAll('.carousel .thumbnail .item');
+    
+    if(type === 'next'){
+        SliderDom?.appendChild(SliderItemsDom[0]);
+        thumbnailBorderDom?.appendChild(thumbnailItemsDom[0]);
+        carouselDom?.classList.add('next');
+    }else{
+        SliderDom?.prepend(SliderItemsDom[SliderItemsDom!.length - 1]);
+        thumbnailBorderDom?.prepend(thumbnailItemsDom[thumbnailItemsDom.length - 1]);
+        carouselDom?.classList.add('prev');
+    }
+    clearTimeout(runTimeOut);
+    runTimeOut = setTimeout(() => {
+        carouselDom?.classList.remove('next');
+        carouselDom?.classList.remove('prev');
+    }, timeRunning);
 
-            clearTimeout(autoRun)
-            autoRun = setTimeout(() => {
-                nextEl?.click()
-            }, autoNext);
-        }
-      
+    clearTimeout(runNextAuto);
+    runNextAuto = setTimeout(() => {
+        nextDom?.click();
+    }, timeAutoNext)
+}
     }, [])
     
 
