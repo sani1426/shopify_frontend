@@ -1,9 +1,16 @@
+
+@font-face {
+    font-family: poppins;
+    src: url(../../public/font/poppins/Poppins-Medium.ttf);
+}
+
 .carousel{
-    height: 100vh;
-    margin-top: -50px;
+    height: calc(100vh - 26px);
+    margin-top: 26px;
     width: 100vw;
     overflow: hidden;
     position: relative;
+    font-family: poppins;
 }
 .carousel .list .item{
     width: 100%;
@@ -64,7 +71,7 @@
 .thumbnail{
     position: absolute;
     bottom: 50px;
-    left: 50%;
+    left: 60%;
     width: max-content;
     z-index: 100;
     display: flex;
