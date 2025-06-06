@@ -19,7 +19,7 @@
 
 .carousel .list .item .content{
     position: absolute;
-    top: 20%;
+    top: 30%;
     width: 1140px;
     max-width: 80%;
     left: 50%;
@@ -37,11 +37,11 @@
 
 .carousel .list .item .content .title{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
 }
 .carousel .list .item .content .topic{
     font-weight: bold;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #f1683a;
 }
 .carousel .list .item .content .buttons{
