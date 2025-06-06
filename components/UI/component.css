@@ -105,8 +105,8 @@
 /* arrows */
 .arrows{
     position: absolute;
-    top: 80%;
-    right: 52%;
+    top: 90%;
+    right: 62%;
     z-index: 100;
     width: 300px;
     max-width: 30%;
