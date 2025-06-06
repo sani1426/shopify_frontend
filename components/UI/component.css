@@ -27,6 +27,7 @@
     padding-right: 30%;
     box-sizing: border-box;
     color: #fff;
+    text-shadow: 0 5px 10px #0004;
 }
 
 .carousel .list .item .content .author{
@@ -36,11 +37,11 @@
 
 .carousel .list .item .content .title{
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5rem;
 }
 .carousel .list .item .content .topic{
     font-weight: bold;
-    font-size: 2em;
+    font-size: 1.5rem;
     color: #f1683a;
 }
 .carousel .list .item .content .buttons{
@@ -101,9 +102,6 @@
     z-index: 100;
 }
 
-.text_shadow{
-    text-shadow: 0 5px 10px #0004;
-  }
   
   .carousel.next .list .item:nth-child(1) img{
     width: 150px;

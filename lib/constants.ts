@@ -11,7 +11,7 @@ export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Shopify'
     export const sliderData:sliderDataType[] = [
       {
         id: 1,
-        title: "Experience Pure Sound",
+        title: "Pure Sound",
         offer: "Limited Time Offer 30% Off",
         description: ' Your Perfect Headphones Awaits!' ,
         buttonText1: "Buy now",
@@ -20,7 +20,7 @@ export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Shopify'
       },
       {
         id: 2,
-        title: "Next-Level Gaming Starts Here",
+        title: "Next-Level Gaming",
         description: ' Discover PlayStation 5 Today!' ,
         offer: "Hurry up only few lefts!",
         buttonText1: "Shop Now",
