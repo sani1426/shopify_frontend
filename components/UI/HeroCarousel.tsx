@@ -2,8 +2,56 @@
 
 import { sliderData } from '@/lib/constants'
 import './component.css'
+import {useEffect} from 'react'
 
 const HeroCarousel = () => {
+
+
+    useEffect(() => {
+        let nextEl = document.getElementById('next')
+        let prevEl = document.getElementById('prev')
+        let carouselEl = document.querySelector('.carousel')
+        let listEl = document.querySelector('.carousel .list')
+        let thumbnailEl = document.querySelector('.carousel .thumbnail')
+
+        nextEl?.addEventListener('click' , () => showSlider('next'))
+
+        let timeRunning = 3000 ;
+        let autoNext = 7000 ;
+        let autoRun: ReturnType<typeof setTimeout> ;
+        let runTimeOut: ReturnType<typeof setTimeout>;
+        function showSlider(type:string){
+            let itemsSlider = document.querySelectorAll('.carousel .list .item') ;
+            let thumbnailSlider = document.querySelectorAll('.carousel .thumbnail .item') ;
+
+            if(type === 'next'){
+                listEl?.appendChild(itemsSlider[0])
+                thumbnailEl?.appendChild(thumbnailSlider[0])
+                carouselEl?.classList.add('next')
+            }else{
+                let positionLastItem = itemsSlider.length - 1 ;
+                listEl?.prepend(itemsSlider[positionLastItem])
+                thumbnailEl?.prepend(thumbnailSlider[positionLastItem])
+                carouselEl?.classList.add('prev')
+            }
+
+            clearTimeout(runTimeOut) ;
+            runTimeOut = setTimeout(()=> {
+                carouselEl?.classList.remove('next')
+            }, timeRunning)
+
+            clearTimeout(autoRun)
+            autoRun = setTimeout(() => {
+                nextEl?.click()
+            }, autoNext);
+        }
+      
+    }, [])
+    
+
+
+
+
   return (
     <div className='carousel '>
       <div className='list'>
