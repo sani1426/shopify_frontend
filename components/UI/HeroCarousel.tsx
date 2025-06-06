@@ -14,7 +14,9 @@ const HeroCarousel = () => {
         let listEl = document.querySelector('.carousel .list')
         let thumbnailEl = document.querySelector('.carousel .thumbnail')
 
-        nextEl?.addEventListener('click' , () => showSlider('next'))
+        nextEl!.onclick = function() {
+          showSlider('next')
+        }
 
         let timeRunning = 3000 ;
         let autoNext = 7000 ;
