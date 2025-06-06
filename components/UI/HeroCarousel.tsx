@@ -48,6 +48,8 @@ const HeroCarousel = () => {
             <button className='w-[40px] h-[40px] rounded-full bg-[#eee4] border-none text-[#fff] font-bold  transition-all duration-500 hover:bg-[#eee] hover:text-[#555]' id='next'>next</button>
         </div>
 
+        <div className="time"></div>
+
     </div>
   )
 }
