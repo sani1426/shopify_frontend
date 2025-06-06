@@ -171,6 +171,7 @@
 
 .carousel.next .thumbnail .item:nth-child(1){
     width: 0;
+    display: none;
     overflow: hidden;
     animation: showThumb .5s linear 1 forwards;
 }
