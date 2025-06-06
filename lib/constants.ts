@@ -45,13 +45,13 @@ export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Shopify'
         buttonText2: "Learn More",
         imgSrc: '/carousel/banner3.jpg'
       },
-      {
-        id: 5,
-        title: "Power Meets Elegance",
-        description: ' Apple MacBook Pro is Here for you' ,
-        offer: "Exclusive Deal 40% Off",
-        buttonText1: "Order Now",
-        buttonText2: "Learn More",
-        imgSrc: '/carousel/banner5.jpg'
-      },
+      // {
+      //   id: 5,
+      //   title: "Power Meets Elegance",
+      //   description: ' Apple MacBook Pro is Here for you' ,
+      //   offer: "Exclusive Deal 40% Off",
+      //   buttonText1: "Order Now",
+      //   buttonText2: "Learn More",
+      //   imgSrc: '/carousel/banner5.jpg'
+      // },
     ];

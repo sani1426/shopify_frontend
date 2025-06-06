@@ -82,7 +82,6 @@ const HeroCarousel = () => {
                         <img src={_?.imgSrc} alt="" className='' />
                         <div className="content ">
                             <div className=" author ">{_?.title}</div>
-                            <div className="des">{_?.description}</div>
                         </div>
                     </div>
                     )
