@@ -62,8 +62,8 @@
 
 .carousel .thumbnail{
     position: absolute ;
-    top: 50%;
-    left: 50%;
+    top: 60%;
+    left: 60%;
     width: max-content;
     z-index: 100;
     display: flex;
