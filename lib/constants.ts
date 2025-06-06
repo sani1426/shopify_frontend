@@ -16,7 +16,7 @@ export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Shopify'
         description: ' Your Perfect Headphones Awaits!' ,
         buttonText1: "Buy now",
         buttonText2: "Find more",
-        imgSrc: '/carousel/bose_headphone_image.png'
+        imgSrc: '/carousel/banner4.jpg'
       },
       {
         id: 2,
@@ -52,6 +52,6 @@ export const APP_NAME = process.env.NEXT_PUBLIC_APP_NAME || 'Shopify'
         offer: "Exclusive Deal 40% Off",
         buttonText1: "Order Now",
         buttonText2: "Learn More",
-        imgSrc: '/carousel/playstation_image.png'
+        imgSrc: '/carousel/banner5.jpg'
       },
     ];
