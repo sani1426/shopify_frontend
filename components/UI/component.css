@@ -39,8 +39,7 @@
     font-weight: bold;
     letter-spacing: 10px;
 }
-.carousel .list .item .title,
-.carousel .list .item .topic{
+.carousel .list .item .title{
     font-size: 5em;
     font-weight: bold;
     line-height: 1.3em;
@@ -51,6 +50,8 @@
 
 }
 .carousel .list .item .topic{
+    font-size: 4em;
+    font-weight: bold;
     color: #f1683a;
     background-image: linear-gradient(45deg , #ffc300 , #d70000);
     -webkit-text-fill-color: transparent;
