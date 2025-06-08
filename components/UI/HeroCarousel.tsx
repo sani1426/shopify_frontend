@@ -93,7 +93,7 @@ const HeroCarousel = () => {
             <div className='item '>
               <img src={_?.imgSrc} alt='' className='' />
               <div className='content '>
-                <div className=' author '>{_?.title}</div>
+                <div className='title '>{_?.title}</div>
               </div>
             </div>
           )
