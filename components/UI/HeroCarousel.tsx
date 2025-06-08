@@ -77,7 +77,7 @@ const HeroCarousel = () => {
                   <button className='border-none bg-[#eee] tracking-[3px] font-semibold '>
                     {item?.buttonText1}
                   </button>
-                  <button className='tracking-[3px] font-semibold border-[1px] border-white bg-transparent text-white'>
+                  <button className='tracking-[3px] font-semibold border-[1px] border-white bg-transparent text-white text-nowrap'>
                     {item?.buttonText2}
                   </button>
                 </div>

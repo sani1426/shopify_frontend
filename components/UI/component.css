@@ -38,6 +38,7 @@
 .carousel .list .item .author{
     font-weight: bold;
     letter-spacing: 10px;
+    color: #2454ff;
 }
 .carousel .list .item .title{
     font-size: 5em;
@@ -64,6 +65,7 @@
     grid-template-rows: 40px;
     gap: 5px;
     margin-top: 20px;
+    
 }
 .carousel .list .item .buttons button{
     border: none;
@@ -97,18 +99,19 @@
     border-radius: 20px;
 }
 .thumbnail .item .content{
-    color: #fff;
     position: absolute;
     bottom: 10px;
     left: 10px;
     right: 10px;
 }
 .thumbnail .item .content .title{
-    font-weight: 500;
+    color: #df3bf1;
+    background-image: linear-gradient(45deg , #ff006e , #df3bf1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    font-weight: 600;
 }
-.thumbnail .item .content .description{
-    font-weight: 300;
-}
+
 /* arrows */
 .arrows{
     position: absolute;
