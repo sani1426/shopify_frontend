@@ -280,6 +280,9 @@
     }
 }
 @media screen and (max-width: 678px) {
+    .carousel{
+        height: 60vh;
+    }
     .carousel .list .item .content{
         padding-right: 0;
     }
