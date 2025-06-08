@@ -293,6 +293,9 @@
     .carousel{
         height: 70vh;
     }
+    .thumbnail{
+        left: 45%;
+    }
     .carousel .list .item .content{
         padding-right: 0;
     }
