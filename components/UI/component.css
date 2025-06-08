@@ -293,6 +293,9 @@
     .thumbnail{
         left: 45%;
     }
+    .arrows{
+        right: 32%;
+    }
     .carousel .list .item .content{
         padding-right: 0;
     }
